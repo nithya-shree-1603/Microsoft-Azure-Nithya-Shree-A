@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: #0d0d0d;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: #444;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background: #fff;
+            color: #000;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+        .section {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .section.active {
+            display: block;
+        }
+        .section img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nithya's Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#" data-target="about">About</a>
+        <a href="#" data-target="skills">Skills</a>
+        <a href="#" data-target="achievements">Achievements</a>
+        <a href="#" data-target="contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="section active" id="about">
+            <h2>About</h2>
+            <img src="c:\Users\NGP\Desktop\images\info.png" alt="About Image">
+            <p><p>Hi! This is Nithya Shree Anbazhagan. I am currently pursuing my Bachelor of Engineering (B.E.) degree in Computer Science and Engineering at Dr. N.G.P. Institute of Technology, Coimbatore. My academic journey has equipped me with a solid foundation in various aspects of computer science and engineering, fostering a strong analytical and problem-solving mindset. I am a trained Full Stack Developer with a particular expertise in front-end development. My skills encompass a wide range of technologies and tools essential for creating dynamic and responsive web applications. In addition to my technical prowess, I have a keen interest in UI/UX design, which allows me to craft user-friendly and aesthetically pleasing interfaces.Communication is one of my key strengths. I am adept at conveying complex technical concepts in an easily understandable manner, making me an effective team player and collaborator. My ability to adapt to new environments and embrace challenges head-on has always been a significant asset, ensuring that I thrive in diverse and dynamic settings.Furthermore, I am known for being a supportive and reliable peer. My peers often appreciate my willingness to assist and contribute to collective goals, enhancing team productivity and cohesion. With a combination of technical skills, design acumen, and interpersonal abilities, I am dedicated to delivering innovative solutions and achieving excellence in every project I undertake.</p>
+            
+        </div>
+
+        <div class="section" id="skills">
+            <h2>Skills</h2>
+            <img src="c:\Users\NGP\Desktop\images\skill.png" alt="Skills Image">
+            <p>Java programming</p>
+            <p>Frontend Development</p>
+            <p>UI/UX Designing</p>
+            <p>Blockchain Fundamentals</p>
+            
+        </div>
+
+        <div class="section" id="achievements">
+            <h2>Achievements</h2>
+            <img src="c:\Users\NGP\Desktop\images\gold-medal.png" alt="Achievements Image">
+            <p>I have been fortunate to achieve several milestones in my academic and professional journey, showcasing my dedication and expertise in various fields.</p>
+            
+            <h3>Design Patent</h3>
+            <p>I hold a design patent for the 'Wireless PowerPoint Clicker'. This innovative device simplifies the presentation process by enabling seamless slide navigation without the need for a wired connection, enhancing the overall user experience for presenters.</p>
+            
+            <h3>Paper Presentation Winner</h3>
+            <p>I have won a paper presentation competition with my paper titled "Smart Agriculture". This paper explores the integration of modern technology in agriculture to improve efficiency, productivity, and sustainability. My research and presentation were recognized for their originality and potential impact on the agricultural sector.</p>
+            
+            <h3>Hackathons</h3>
+            <p>I have actively participated in several hackathons, where I collaborated with diverse teams to develop innovative solutions under time constraints. These experiences have honed my problem-solving skills, fostered creativity, and taught me the importance of teamwork and adaptability.</p>
+            
+            <h3>Communication Certification</h3>
+            <p>I have completed a certification in communication from the Voice Training Institute in Chennai. This program enhanced my communication skills, enabling me to convey ideas clearly and effectively, both in written and verbal forms. It has significantly improved my ability to interact with peers, mentors, and stakeholders.</p>
+            
+            <h3>Cloud Computing Certification</h3>
+            <p>I have also obtained a certification in Cloud Computing from NPTEL (National Programme on Technology Enhanced Learning). This course provided me with a comprehensive understanding of cloud computing concepts, architectures, and services. It equipped me with the knowledge to leverage cloud technologies for scalable and efficient computing solutions.</p>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>Contact</h2>
+            <img src="c:\Users\NGP\Desktop\images\phone.png" alt="Contact Image">
+            <p>Email: nithyashreeanabalagan@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/nithya-shree-782259259">Nithya Shree</a></p>
+            <p>Number:123456789</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Nithya Shree Anbazhagan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelectorAll('.section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(this.dataset.target).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
